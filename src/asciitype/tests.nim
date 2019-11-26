@@ -36,7 +36,7 @@ proc isAnyType*(c: char, typeset: AsciiType): bool =
         This function performs character tests.
 
         see also:
-            `isAnyType(string) <#isAnyType, string>`
+        * `isAnyType(string) <#isAnyType,string>`_
     ]##
     runnableExamples:
         assert "ABCDE".isAnyType({upper}) == true
@@ -49,7 +49,7 @@ proc isAnyType*(c: char, typeset: AsciiType): bool =
 proc isAnyType*(s: string, typeset: AsciiType): bool =
     ##[
         see also:
-            `isAnyType(char) <#isAnyType, char>`
+        * `isAnyType(char) <#isAnyType,char>`_
     ]##
     for c in s:
         if not c.isAnyType(typeset):

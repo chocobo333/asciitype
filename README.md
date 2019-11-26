@@ -28,3 +28,4 @@ doAssert ' '.isAnyType({space}) == true
 ```
 
 ## Document
+[link](doc/asciitype.html)

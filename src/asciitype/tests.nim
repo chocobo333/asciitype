@@ -32,12 +32,25 @@ const asciiTypeTable = block:
     t
 
 proc isAnyType*(c: char, typeset: AsciiType): bool =
+    ##[
+        This function performs character tests.
+
+        see also:
+            `isAnyType(string) <#isAnyType, string>`
+    ]##
+    runnableExamples:
+        assert "ABCDE".isAnyType({upper}) == true
+        assert "abcde012345".isAnyType({lower, num}) == true
     for t in typeset:
         if t in asciiTypeTable[int(c)]:
             return true
     return false
 
 proc isAnyType*(s: string, typeset: AsciiType): bool =
+    ##[
+        see also:
+            `isAnyType(char) <#isAnyType, char>`
+    ]##
     for c in s:
         if not c.isAnyType(typeset):
             return false

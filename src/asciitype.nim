@@ -2,6 +2,7 @@
     AsciiType
     =========
     This module provids functions that perform character tests such as ``isdigit(char c)`` in ``ctype.h`` in ``c language``.
+    Implementaion and document of the functions are in [asciitype/tests.nim](asciitype/tests.html)
     
     Usage-exsample
     --------------
